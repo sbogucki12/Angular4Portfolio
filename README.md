@@ -8,10 +8,14 @@
 + Day Two, am:
 ![Imgur](https://i.imgur.com/ojg31WB.jpg)
 
++ Day Two, pm: 
+![Imgur](https://i.imgur.com/aitss9U.jpg)
+
 ## Timeline
 
 + 12/10/2017 am: First Commit. 
 + 12/11/2017, am: Added navbar component, and a simple example of two-way data binding.
++ 12/11/2017, pm: Added buttons to show/hide all components. 
 
 
 

@@ -25,7 +25,7 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
   imports: [
     BrowserModule,
     FormsModule
-  ],
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -23,21 +23,94 @@
       <input type="text" class="form-control" [(ngModel)]="userNameInput" />
       <button class="btn btn-primary" (click)="onCreateUsername(userNameInput)">Submit</button>
       <br/>
-      <br/>
-      {{ greeting }}
-      
+      <br/> {{ greeting }}
+
       <h3>Things I can do:</h3>
+      <p>
+        <button class="btn btn-primary" (click)="onShowDotnet()">ASP.NET</button>
+        <button class="btn btn-primary" (click)="onShowEntityFramework()">Entity Framework</button>
+        <button class="btn btn-primary" (click)="onShowSQL()">SQL</button>
+        <button class="btn btn-primary" (click)="onShowUI()">UI</button>
+        <button class="btn btn-primary" (click)="onShowMisc()">Misc.</button>
+      </p>
     </div>
     <div class="col-md-4 hiddenColumns">
       <p></p>
     </div>
   </div>
 
+  <div *ngIf="showDotnet">
+    <app-dotnet></app-dotnet>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideDotnet();">Hide ASP.NET</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
 
+  <div *ngIf="showEntityFramework">
+    <app-entity-framework></app-entity-framework>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideEntityFramework();">Hide Entity Framework</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
 
-  <app-dotnet></app-dotnet>
-  <app-entity-framework></app-entity-framework>
-  <app-sql></app-sql>
-  <app-ui></app-ui>
-  <app-misc></app-misc>
+  <div *ngIf="showSQL">
+    <app-sql></app-sql>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideSQL();">Hide SQL</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showUI">
+    <app-ui></app-ui>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideUI();">Hide UI</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showMisc">
+    <app-misc></app-misc>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideMisc();">Hide Misc.</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
 </div>
