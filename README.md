@@ -1,5 +1,20 @@
 # PortfolioApp
 
+## Screenshots
+
++ Day One: 
+![Imgur](https://i.imgur.com/PWXYn4d.jpg)
+
+## Timeline
+
++ 12/10/2017 am: First Commit. 
+
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
 ## Development server

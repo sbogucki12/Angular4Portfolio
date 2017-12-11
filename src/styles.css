@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.skillHeadings {
+    background-color: lightcoral;
+    width: 600px;
+}
+
+.skillTexts {
+    background-color: lightseagreen;
+    width: 600px;
+}
+
+#mainTitle {
+    background-color: lightslategray;
+    width: 600px;
+}
+
+.hiddenColumns {
+    width: 200px; 
+}
+
+#mainLink {
+    width: 600px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
