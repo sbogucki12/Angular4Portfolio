@@ -12,6 +12,7 @@ export class AppComponent {
   showSQL: boolean = false;
   showUI: boolean = false;
   showMisc: boolean = false;
+  showNode: boolean = false;
 
   onShowDotnet(): void {
     this.showDotnet = true;    
@@ -27,6 +28,14 @@ export class AppComponent {
 
   onHideEntityFramework(): void {
     this.showEntityFramework = false; 
+  }
+
+  onShowNode(): void {
+    this.showNode = true;    
+  }
+
+  onHideNode(): void {
+    this.showNode = false; 
   }
 
   onShowSQL(): void {

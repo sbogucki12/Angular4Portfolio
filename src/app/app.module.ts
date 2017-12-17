@@ -10,6 +10,7 @@ import { AppSqlComponent } from './app-sql/app-sql.component';
 import { AppUiComponent } from './app-ui/app-ui.component';
 import { AppMiscComponent } from './app-misc/app-misc.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+import { NodeComponent } from './node/node.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppNavbarComponent } from './app-navbar/app-navbar.component';
     AppSqlComponent,
     AppUiComponent,
     AppMiscComponent,
-    AppNavbarComponent
+    AppNavbarComponent,
+    NodeComponent
   ],
   imports: [
     BrowserModule,

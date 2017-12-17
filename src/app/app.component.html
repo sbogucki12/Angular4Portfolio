@@ -29,6 +29,7 @@
       <p>
         <button class="btn btn-primary" (click)="onShowDotnet()">ASP.NET</button>
         <button class="btn btn-primary" (click)="onShowEntityFramework()">Entity Framework</button>
+        <button class="btn btn-primary" (click)="onShowNode()">Node.js</button>
         <button class="btn btn-primary" (click)="onShowSQL()">SQL</button>
         <button class="btn btn-primary" (click)="onShowUI()">UI</button>
         <button class="btn btn-primary" (click)="onShowMisc()">Misc.</button>
@@ -62,6 +63,21 @@
       </div>
       <div class="col-md-4 skillTexts">
         <button class="btn btn-danger" (click)="onHideEntityFramework();">Hide Entity Framework</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showNode">
+    <app-node></app-node>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideNode();">Hide Node</button>
       </div>
       <div class="col-md-4 hiddenColumns">
         <p></p>
