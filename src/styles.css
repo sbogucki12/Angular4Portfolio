@@ -8,15 +8,26 @@
 /*  importing font used throughout page */
 @import url('https://fonts.googleapis.com/css?family=Squada+One');
 
+/* importing the font used  in the skill description boxes */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 /* skillHeadings and skillTexts format the skill components on the main page*/
 .skillHeadings {
-    background-color: lightcoral;
+    background-color: rgb(23, 24, 23);
     width: 600px;
+    border-style: solid;
+    border-color: rgb(42, 150, 94);
+    font-family: 'Bungee', cursive;
+    color: rgb(228, 190, 19);
+    margin-top: 10px; 
 }
 
 .skillTexts {
-    background-color: lightseagreen;
+    background-color: rgb(115, 209, 113);
     width: 600px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 15px; 
+    padding-bottom: 5px; 
 }
 
 /* this formats the BoGoodSki heading on the main page*/
@@ -59,6 +70,7 @@ navbar on the top of the page */
     width: 75px;
 }
 
+/*  Styling for the primary greeting textbox with the input field on the main page */
 #greeting {
     background: linear-gradient(rgb(20, 211, 17), white); 
     width: 600px;
@@ -69,22 +81,93 @@ navbar on the top of the page */
     color: rgb(0, 0, 0)
 }
 
+/*  Width of Input field that takes in the user's name */
 #inputWidth {
     width: 300px;    
 }
-
+/*  centers the input field */
 #inputColumn {
     width: 450px;
 }
 
+/*  centers the input button */
 #inputButtonColumn {
     padding-top: 10px; 
 }
 
+/*  Styling for the "Things I can Do box */
 #contents {
     background-color: rgb(42, 150, 94);
     width: 600px;
     border-style: solid;
     border-color: black;
     margin-top: 40px; 
+    font-family: 'Squada One', cursive;
+    font-size: 20px; 
+    color: rgb(228, 190, 19);
+    padding-bottom: 10px;
+}
+
+/* Styling for the greeting message that is provided when user submits their name */
+#greetingMessage {
+    padding-left: 30px; 
+    padding-top: 15px;
+    font-family: 'Squada One', cursive;
+    font-size: 18px; 
+    color: rgb(0, 0, 0)
+}
+
+.btn-primary {
+    background-color: rgb(115, 209, 113);
+    border-style: solid;
+    border-color: black;
+    color: rgb(142, 30, 54);
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(228, 190, 19);
+}
+
+.btn-primary:visited {
+    background-color: rgb(115, 209, 113);
+}
+
+.btn-primary:active {
+    background-color: rgb(115, 209, 113);
+}
+
+.btn-primary:focus {
+    background-color: rgb(228, 190, 19);
+    color: black; 
+}
+
+.btn-primary:link {
+    background-color: rgb(115, 209, 113);
+}
+
+.btn-danger {
+    background-color: black;
+    border-style: solid;
+    border-color: rgb(115, 209, 113);
+    color: rgb(228, 190, 19);
+    font-size: 18px; 
+    font-family: 'Squada One', cursive;
+
+}
+
+.btn-danger:hover {
+    background-color: rgb(228, 190, 19);
+}
+
+.btn-danger:visited {
+    background-color: black;
+}
+
+.btn-danger:active {
+    background-color: black;
+}
+
+.btn-danger:link {
+    background-color: black;
 }

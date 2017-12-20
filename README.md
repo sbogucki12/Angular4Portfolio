@@ -1,5 +1,9 @@
 # PortfolioApp
 
+This is an extension to my original portfolio, link below, that was first created to practice working within the Angular (5) framework.  Enjoy! 
+
+[Original Portfolio](http://bogoodskiportfolio.azurewebsites.net/)
+
 ## Screenshots
 
 + Day One: 
@@ -20,6 +24,9 @@
 + Day Five pm: 
 ![Imgur](https://i.imgur.com/1OcXOfu.jpg)
 
++ Day Six am: 
+![Imgur](https://i.imgur.com/Ts9DXjA.jpg)
+
 
 ## Timeline
 
@@ -29,6 +36,7 @@
 + 12/12/2017 am: Deployed to AWS S3. 
 + 12/17/2017 am: Added a section about Node.
 + 12/19/2017 pm: Began working on the styling. 
++ 12/20/2017 am: Updated styling. Uploaded to Amazon S3.
 
 
 
