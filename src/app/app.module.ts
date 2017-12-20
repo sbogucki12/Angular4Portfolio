@@ -11,6 +11,8 @@ import { AppUiComponent } from './app-ui/app-ui.component';
 import { AppMiscComponent } from './app-misc/app-misc.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { NodeComponent } from './node/node.component';
+import { CsharpComponent } from './csharp/csharp.component';
+import { CloudComponent } from './cloud/cloud.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { NodeComponent } from './node/node.component';
     AppUiComponent,
     AppMiscComponent,
     AppNavbarComponent,
-    NodeComponent
+    NodeComponent,
+    CsharpComponent,
+    CloudComponent
   ],
   imports: [
     BrowserModule,

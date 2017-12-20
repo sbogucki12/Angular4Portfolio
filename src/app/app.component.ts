@@ -13,6 +13,8 @@ export class AppComponent {
   showUI: boolean = false;
   showMisc: boolean = false;
   showNode: boolean = false;
+  showCsharp: boolean = false;
+  showCloud: boolean = false;  
 
   onShowDotnet(): void {
     this.showDotnet = true;    
@@ -28,6 +30,14 @@ export class AppComponent {
 
   onHideEntityFramework(): void {
     this.showEntityFramework = false; 
+  }
+
+  onShowCsharp(): void {
+    this.showCsharp = true;    
+  }
+
+  onHideCsharp(): void {
+    this.showCsharp = false; 
   }
 
   onShowNode(): void {
@@ -52,6 +62,14 @@ export class AppComponent {
 
   onHideUI(): void {
     this.showUI = false; 
+  }
+
+  onShowCloud(): void {
+    this.showCloud = true;    
+  }
+
+  onHideCloud(): void {
+    this.showCloud = false; 
   }
 
   onShowMisc(): void {

@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing in CSS-Bootstrap */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+/* importing custom font to use in the header */
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+/*  importing font used throughout page */
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+/* skillHeadings and skillTexts format the skill components on the main page*/
 .skillHeadings {
     background-color: lightcoral;
     width: 600px;
@@ -11,22 +19,72 @@
     width: 600px;
 }
 
+/* this formats the BoGoodSki heading on the main page*/
 #mainTitle {
-    background-color: lightslategray;
+    background-color: rgb(42, 150, 94);
     width: 600px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    color: rgb(228, 190, 19);
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-family: 'Bungee', cursive;
+    font-style: italic;
 }
 
+/* hiddencolumns are used throughout the main page to center everything. 
+they add white space to the left and right of the main content. */
 .hiddenColumns {
     width: 200px; 
 }
 
+/* mainlink positions to the link in the upper navbar */
 #mainLink {
-    width: 600px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 16px;      
 }
 
-#navbarStyle {
-    background-color: #403d3d
+/* formatting for the upper navbar with the link back to the main portfolio*/
+#header {
+    background: linear-gradient(rgb(20, 211, 17), white);
+    padding-left: 10px; 
+    padding-top: 15px;
+    
+}
+/* Provides space between the USF logo and the link back to the primary portfolio (in the 
+navbar on the top of the page */
+#headerLogo {
+    width: 75px;
+}
+
+#greeting {
+    background: linear-gradient(rgb(20, 211, 17), white); 
+    width: 600px;
+    padding-top: 10px; 
+    margin-top: 15px; 
+    font-family: 'Squada One', cursive;
+    font-size: 20px; 
+    color: rgb(0, 0, 0)
+}
+
+#inputWidth {
+    width: 300px;    
+}
+
+#inputColumn {
+    width: 450px;
+}
+
+#inputButtonColumn {
+    padding-top: 10px; 
+}
+
+#contents {
+    background-color: rgb(42, 150, 94);
+    width: 600px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 40px; 
 }

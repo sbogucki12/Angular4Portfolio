@@ -1,4 +1,8 @@
-<app-navbar></app-navbar>
+<div class="row" id="header">
+  <div class="col-md-12">
+    <app-navbar></app-navbar>
+  </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -17,27 +21,70 @@
     <div class="col-md-4 hiddenColumns">
       <p></p>
     </div>
-    <div class="col-md-4 skillTexts">
-      <h4>I love two-way data-binding. Please tell me your name:</h4>
-      <br/>
-      <input type="text" class="form-control" [(ngModel)]="userNameInput" />
-      <button class="btn btn-primary" (click)="onCreateUsername(userNameInput)">Submit</button>
+
+    <div class="col-md-4" id="greeting">
+      <p>I love two-way data-binding. Please tell me your name:</p>
+      <div class="row">
+        <div class="col-md-2">
+          <p></p>
+        </div>
+
+        <div class="col-md-8" id="inputColumn">
+          <input type="text" class="form-control" [(ngModel)]="userNameInput" id="inputWidth" />
+          <div class="row">
+            <div class="col-md-2">
+              <p></p>
+            </div>
+            <div class="col-md-8" id="inputButtonColumn">
+              <button class="btn btn-primary" (click)="onCreateUsername(userNameInput)">Submit</button>
+            </div>
+            <div class="col-md-2">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-2">
+        <p></p>
+      </div>
+
+
+
       <br/>
       <br/> {{ greeting }}
+    </div>
 
+    <div class="col-md-4 hiddenColumns">
+      <p></p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 hiddenColumns">
+      <p></p>
+    </div>
+
+    <div class="col-md-4" id="contents">
       <h3>Things I can do:</h3>
       <p>
         <button class="btn btn-primary" (click)="onShowDotnet()">ASP.NET</button>
         <button class="btn btn-primary" (click)="onShowEntityFramework()">Entity Framework</button>
+        <button class="btn btn-primary" (click)="onShowCsharp()">C#</button>
         <button class="btn btn-primary" (click)="onShowNode()">Node.js</button>
+        <button class="btn btn-primary" (click)="onShowUI()">UI (Angular)</button>
         <button class="btn btn-primary" (click)="onShowSQL()">SQL</button>
-        <button class="btn btn-primary" (click)="onShowUI()">UI</button>
+        <button class="btn btn-primary" (click)="onShowCloud()">Cloud</button>
         <button class="btn btn-primary" (click)="onShowMisc()">Misc.</button>
       </p>
     </div>
+
     <div class="col-md-4 hiddenColumns">
       <p></p>
     </div>
+
   </div>
 
   <div *ngIf="showDotnet">
@@ -63,6 +110,21 @@
       </div>
       <div class="col-md-4 skillTexts">
         <button class="btn btn-danger" (click)="onHideEntityFramework();">Hide Entity Framework</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showCsharp">
+    <app-csharp></app-csharp>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideCsharp();">Hide C#</button>
       </div>
       <div class="col-md-4 hiddenColumns">
         <p></p>
@@ -108,6 +170,21 @@
       </div>
       <div class="col-md-4 skillTexts">
         <button class="btn btn-danger" (click)="onHideUI();">Hide UI</button>
+      </div>
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showCloud">
+    <app-cloud></app-cloud>
+    <div class="row">
+      <div class="col-md-4 hiddenColumns">
+        <p></p>
+      </div>
+      <div class="col-md-4 skillTexts">
+        <button class="btn btn-danger" (click)="onHideCloud();">Cloud</button>
       </div>
       <div class="col-md-4 hiddenColumns">
         <p></p>

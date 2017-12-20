@@ -17,6 +17,9 @@
 + Day Four am: 
 ![Imgur](https://i.imgur.com/25isSFQ.jpg)
 
++ Day Five pm: 
+![Imgur](https://i.imgur.com/1OcXOfu.jpg)
+
 
 ## Timeline
 
@@ -25,6 +28,7 @@
 + 12/11/2017, pm: Added buttons to show/hide all components. 
 + 12/12/2017 am: Deployed to AWS S3. 
 + 12/17/2017 am: Added a section about Node.
++ 12/19/2017 pm: Began working on the styling. 
 
 
 
